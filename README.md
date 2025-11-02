@@ -4,6 +4,8 @@
 [![style: very good analysis][very_good_analysis_badge]][very_good_analysis_link]
 [![License: MIT][license_badge]][license_link]
 
+<Image src="screenshots/cover.png" width ="100%">
+
 <div>
 <h1><a href="https://youtu.be/xr56AjdGf-o"><strong>Watch complete tutorial »</strong></a></h1>
 <a href="https://github.com/Gambley1/flutter_instagram_offline_first_clone/issues/new?assignees=&labels=bug&projects=&template=bug_report.md&title=fix%3A+">Report Bug .</a>
@@ -12,8 +14,6 @@
 </div>
 
 ## 💫 About The Project
-
-[![Github-repository-preview.png](https://i.postimg.cc/52v6WG4V/Github-repository-preview.png)](https://youtu.be/xr56AjdGf-o)
 
 Most people always wanted to see a Flutter project that is not just a clone but a real-world app with a real-world architecture, that will cover all-in-one: sleek UI with blazingly-fast backend. And, try to imagine, without a Firebase as a primary service…
 
