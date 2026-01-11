@@ -1,12 +1,12 @@
 name: Build APK & Web
 
-on:
-  push: 
+on: 
+  push:  
     branches: [main]
-    tags: ['v*']
+    tags:  ['v*']
   workflow_dispatch:
 
-permissions: 
+permissions:  
   contents: read
 
 jobs:
@@ -18,48 +18,48 @@ jobs:
 
       - name: Setup Java
         uses: actions/setup-java@v4
-        with: 
-          distribution: 'temurin'
+        with:  
+          distribution:  'temurin'
           java-version: '17'
 
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
-        with:
-          flutter-version: '3.24.0'
+        with: 
+          channel: 'beta'
 
       - name: Install dependencies
-        run: flutter pub get
+        run:  flutter pub get
 
-      - name:  Build debug APK
+      - name: Build debug APK
         run: flutter build apk --debug -t lib/main_production.dart
 
       - name: Upload debug APK
-        uses: actions/upload-artifact@v4
-        with: 
-          name: apk-debug
+        uses:  actions/upload-artifact@v4
+        with:  
+          name:  apk-debug
           path: build/app/outputs/flutter-apk/app-debug.apk
           retention-days: 30
 
-  build-web: 
-    runs-on:  ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+  build-web:  
+    runs-on: ubuntu-latest
+    steps: 
+      - name:  Checkout
+        uses:  actions/checkout@v4
 
       - name: Setup Flutter
-        uses:  subosito/flutter-action@v2
-        with: 
-          flutter-version:  '3.24.0'
+        uses: subosito/flutter-action@v2
+        with:  
+          channel:  'beta'
 
       - name: Install dependencies
-        run: flutter pub get
+        run:  flutter pub get
 
       - name: Build web release
         run: flutter build web --release -t lib/main_production.dart
 
       - name: Upload web build
-        uses: actions/upload-artifact@v4
-        with:
-          name:  web-release
+        uses:  actions/upload-artifact@v4
+        with: 
+          name: web-release
           path: build/web
-          retention-days: 30
+          retention-days:  30
