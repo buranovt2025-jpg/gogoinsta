@@ -11,7 +11,7 @@ dependencies:
   animations: ^2.0.11
   app_ui:
     path: packages/app_ui
-  async: ^2.11.0
+  async: ^2.13.0
   bloc: ^9.1.0
   cached_memory_image: ^1.5.0
   cached_network_image: ^3.4.1
