@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "607134902350",
+    "project_id": "gogoinsta",
+    "storage_bucket": "gogoinsta.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:607134902350:android:e0f92378c47140d0563b1f",
+        "android_client_info": {
+          "package_name": "com.gogoinsta.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbkOW1LVJzH0vkAMDaVkbdxjxKVNdmjb0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
